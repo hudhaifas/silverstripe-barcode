@@ -175,4 +175,15 @@ abstract class BarcodeBase
 
 		return base64_encode(ob_get_clean());
 	}
+	
+	/**
+	 * Rotate the drawn image
+	 * @param integer $deg Angle of rotation (counter-clockwise)
+	 * @return instance of \emberlabs\Barcode\BarcodeBase
+	 */
+	public function rotate($deg = 180){
+		if ($this->img) $this->img = imagerotate($this->img, $deg, 0);
+
+		return $this;
+	}
 }
