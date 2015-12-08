@@ -1,0 +1,18 @@
+{
+  "name": "gheggie/silverstripe-barcode",
+  "description": "Barcode generator forked from emberlabs/barcode",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/gheggie/silverstripe-barcode",
+  "keywords": ["silverstripe", "barcode", "code128"],
+  "license": "MIT",
+  "authors": [
+    {"name": "Grant Heggie","email": "grant@silverstripe.com.au"}
+  ],
+  "require": {
+    "silverstripe/cms": "~3.1",
+    "silverstripe/framework": "~3.1"
+  },
+  "extra": {
+    "installer-name": "barcode"
+  }
+}
