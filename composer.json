@@ -1,13 +1,13 @@
 {
-  "name": "gheggie/silverstripe-barcode",
-  "description": "Barcode generator forked from emberlabs/barcode",
-  "type": "silverstripe-module",
-  "license": "MIT",
-  "require": {
-      "silverstripe/framework": "^4",
-      "silverstripe/cms": "^4"
-  },
-  "extra": {
-    "installer-name": "barcode"
-  }
+    "name": "gheggie/silverstripe-barcode",
+    "description": "Barcode generator forked from emberlabs/barcode",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "require": {
+        "silverstripe/framework": "^4",
+        "silverstripe/cms": "^4"
+    },
+    "extra": {
+        "installer-name": "barcode"
+    }
 }
