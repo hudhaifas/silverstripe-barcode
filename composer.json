@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
       "silverstripe/framework": "^4",
-      "silverstripe/cms": "^4",
+      "silverstripe/cms": "^4"
   },
   "extra": {
     "installer-name": "barcode"
