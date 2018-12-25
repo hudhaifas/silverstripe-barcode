@@ -1,5 +1,7 @@
 <?php
 
+namespace Gheggie\Barcode\Utils;
+
 /*
  * MIT License
  *  
@@ -91,7 +93,7 @@ class CodabarNumber {
 
         $prefix = '';
         for ($i = 0; $i < $count; $i++) {
-            $prefix .='0';
+            $prefix .= '0';
         }
 
         return $prefix . $sn;

@@ -1,5 +1,10 @@
 <?php
 
+namespace Gheggie\Barcode;
+
+use Gheggie\Barcode\BarcodeBase;
+use LogicException;
+
 /*
  * MIT License
  *  
@@ -33,7 +38,7 @@
 class Codabar
         extends BarcodeBase {
 
-    private static $binaryMap = array(
+    private static $binaryMap = [
         '1' => [1, 1, 1, 1, 2, 2, 1],
         '2' => [1, 1, 1, 2, 1, 1, 2],
         '3' => [2, 2, 1, 1, 1, 1, 1],
@@ -58,13 +63,13 @@ class Codabar
         'E' => [1, 1, 1, 2, 2, 2, 1],
         'N' => [1, 2, 1, 2, 1, 1, 2],
         'T' => [1, 1, 2, 2, 1, 2, 1],
-    );
+    ];
 
     /**
      * @var data - to be set
      */
     private $code = '';
-    private $binary = array();
+    private $binary = [];
     private $start = 'A';
     private $stop = 'B';
     private $font = 5;
@@ -86,7 +91,7 @@ class Codabar
 
     /**
      * Draws the barcode image
-     * @throws \LogicException
+     * @throws LogicException
      */
     public function draw() {
 
